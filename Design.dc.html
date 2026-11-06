@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flow State Automotive BMW Specialists</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Inter',system-ui,sans-serif;background:#0d1012;color:#f3efe8}
+h1,h2,h3,.disp{font-family:'Space Grotesk','Inter',sans-serif}
+a{color:#f3efe8}a:hover{color:#ff915f}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border:2px solid #ff7a45;background:#ff7a45;color:#0d1012;font-weight:700;font-size:16px;text-decoration:none;border-radius:8px;box-sizing:border-box}
+.btn:hover{background:#ff915f;border-color:#ff915f;color:#0d1012}
+.btn.alt{background:transparent;color:#f3efe8;border-color:#5a646b}
+.btn.alt:hover{border-color:#f3efe8;background:transparent;color:#f3efe8}
+.btn.dk{background:#0d1012;border-color:#0d1012;color:#f3efe8}
+.btn.dk:hover{background:#1b2125;border-color:#1b2125;color:#f3efe8}
+.img{background-image:url(./assets/d9690a9db42bc489d84af293bbb5a50a.jpg);background-repeat:no-repeat;background-color:#1b2125}
+.i-hero{background-size:cover;background-position:50% 55%}
+.i-front{background-size:220%;background-position:38% 73%}
+.i-lights{background-size:220%;background-position:88% 47%}
+.i-rear{background-size:220%;background-position:8% 73%}
+.i-sky{background-size:cover;background-position:50% 25%}
+.i-why{background-size:200%;background-position:36% 89%}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#ff7a45;font-weight:600}
+.eyebrow.dk{color:#b4380a}
+.h2{font-size:42px;line-height:1.1;margin:0;font-weight:700;letter-spacing:-.02em}
+.lead{font-size:18px;line-height:1.65;color:#a8aca9;margin:0}
+.card{background:#151a1d;border:1px solid #2a3238;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:21px;font-weight:700}
+.card p{margin:0;font-size:15px;line-height:1.6;color:#a8aca9}
+.card.lt{background:#fff;border-color:#ddd6cb;color:#0d1012}
+.card.lt p{color:#4a4f52}
+.chip{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border:1px solid #2a3238;background:#151a1d;border-radius:999px;font-size:14px;color:#f3efe8}
+.navlink{font-size:15px;text-decoration:none;color:#d8d4cc;padding:12px 0;font-weight:500}
+.ico{width:48px;height:48px;border-radius:10px;background:#0d1012;display:flex;align-items:center;justify-content:center}
+.model-n{font-family:'Space Grotesk','Inter',sans-serif;font-size:64px;line-height:1;font-weight:700;color:#ff7a45}
+summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .v{display:none}
+@media (max-width:860px){
+  .g2,.g3,.g4{grid-template-columns:minmax(0,1fr) !important}
+  .navlinks{display:none !important}
+  .sec{padding-left:20px !important;padding-right:20px !important}
+  .h2{font-size:32px}
+  .herotxt{padding:48px 20px 32px !important}
+  .heroimg{min-height:340px !important}
+}
+</style>
+</helmet>
+<div style="width:100%;box-sizing:border-box">
+
+  <!-- Utility bar -->
+  <div style="background:#151a1d;border-bottom:1px solid #2a3238;font-size:14px;padding:10px 64px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:#a8aca9">
+    <span>Independent BMW specialists · Rivonia, Johannesburg</span>
+    <span>Call <a href="tel:+27731137335" style="color:#f3efe8;font-weight:600">073 113 7335</a> · <a href="https://wa.me/27731137335" style="color:#f3efe8;font-weight:600">WhatsApp</a></span>
+  </div>
+
+  <!-- Header -->
+  <header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:18px 64px;background:#0d1012;border-bottom:1px solid #2a3238">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+      <svg width="40" height="40" viewBox="0 0 36 36" fill="none" stroke="#ff7a45" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 12c6-6 10 6 16 0s8-4 12-2"></path><path d="M4 19c6-6 10 6 16 0s8-4 12-2"></path><path d="M4 26c6-6 10 6 16 0s8-4 12-2"></path></svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15"><strong class="disp" style="font-size:20px;letter-spacing:.06em;color:#f3efe8">FLOW STATE</strong><span style="font-size:11px;letter-spacing:.22em;color:#a8aca9">AUTOMOTIVE · BMW SPECIALISTS</span></span>
+    </a>
+    <nav class="navlinks" style="display:flex;gap:28px;align-items:center">
+      <a class="navlink" href="#models">BMW models</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#why">Why us</a>
+      <a class="navlink" href="#gallery">Gallery</a>
+      <a class="navlink" href="#area">Service area</a>
+      <a class="navlink" href="#faq">FAQs</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:+27731137335">073 113 7335</a>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="g2" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:stretch;background:#0d1012">
+    <div class="herotxt" style="padding:96px 24px 96px 64px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+      <div class="eyebrow">Rivonia · Johannesburg · BMW specialists</div>
+      <h1 style="margin:0;font-size:62px;line-height:1.03;font-weight:700;letter-spacing:-.025em">Your BMW deserves a specialist.</h1>
+      <p class="lead">Servicing, BMW-specific diagnostics and mechanical repairs from a Rivonia workshop that explains the work clearly and gets you back on the road without the stress.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn" href="tel:+27731137335">Call 073 113 7335</a>
+        <a class="btn alt" href="https://wa.me/27731137335">WhatsApp us</a>
+      </div>
+      <div style="font-size:14px;color:#a8aca9">17 11th Ave, Rivonia, Johannesburg</div>
+    </div>
+    <div class="heroimg" style="position:relative;min-height:720px">
+      <div class="img i-hero" role="img" aria-label="A BMW M4 parked on a hilltop at sunset above the city lights" style="position:absolute;top:0;right:0;bottom:0;left:0"></div>
+      <div aria-hidden="true" style="position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(90deg,#0d1012 0%,rgba(13,16,18,0) 38%),linear-gradient(0deg,#0d1012 0%,rgba(13,16,18,0) 18%)"></div>
+    </div>
+  </section>
+
+  <!-- Model strip -->
+  <section class="sec" style="padding:28px 64px;background:#151a1d;border-top:1px solid #2a3238;border-bottom:1px solid #2a3238">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <span class="eyebrow" style="margin-right:10px">We work on</span>
+      <span class="chip" style="background:#0d1012">1 Series</span><span class="chip" style="background:#0d1012">2 Series</span><span class="chip" style="background:#0d1012">3 Series</span><span class="chip" style="background:#0d1012">4 Series</span><span class="chip" style="background:#0d1012">5 Series</span><span class="chip" style="background:#0d1012">X models</span><span class="chip" style="background:#0d1012">M cars</span>
+    </div>
+  </section>
+
+  <!-- How booking works -->
+  <section class="sec" style="padding:88px 64px 40px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+      <div style="display:flex;flex-direction:column;gap:12px"><div class="eyebrow">Simple booking</div><h2 class="h2">How booking works</h2></div>
+      <div class="g3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <div class="card"><div class="model-n" style="font-size:40px">01</div><h3>Call or WhatsApp</h3><p>Tell us your BMW model and what you need. We'll find a time that works.</p></div>
+        <div class="card"><div class="model-n" style="font-size:40px">02</div><h3>Drop off in Rivonia</h3><p>Bring the car to 17 11th Ave. We'll confirm the plan with you before work starts.</p></div>
+        <div class="card"><div class="model-n" style="font-size:40px">03</div><h3>Back in flow</h3><p>Collect your BMW and get back on the road, with a clear picture of what was done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMW models -->
+  <section id="models" class="sec" style="padding:72px 64px 96px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+        <div class="eyebrow">BMW models we work on</div>
+        <h2 class="h2">From the 1 Series to the M cars.</h2>
+        <p class="lead">Not sure your model is covered? Send us your model and year on WhatsApp and we'll confirm.</p>
+      </div>
+      <div class="g4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px">
+        <div class="card"><div class="model-n">1</div><h3>1 Series</h3><p>F20 · F40</p></div>
+        <div class="card"><div class="model-n">2</div><h3>2 Series</h3><p>F22 · G42</p></div>
+        <div class="card"><div class="model-n">3</div><h3>3 Series</h3><p>F30 · G20</p></div>
+        <div class="card"><div class="model-n">4</div><h3>4 Series</h3><p>F32 · G22</p></div>
+        <div class="card"><div class="model-n">5</div><h3>5 Series</h3><p>F10 · G30</p></div>
+        <div class="card"><div class="model-n">X</div><h3>X models</h3><p>X1 · X3 · X5 and more</p></div>
+        <div class="card"><div class="model-n">M</div><h3>M cars</h3><p>M Performance and full M models</p></div>
+        <div class="card" style="justify-content:center;align-items:flex-start;gap:14px;background:#ff7a45;border-color:#ff7a45"><h3 style="color:#0d1012">Another BMW?</h3><p style="color:#2b1a10">Z4, 6 and 7 Series, i models and older cars: ask us.</p><a class="btn dk" href="https://wa.me/27731137335" style="min-height:46px">Ask on WhatsApp</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (light) -->
+  <section id="services" class="sec" style="padding:96px 64px;background:#f3efe8;color:#0d1012">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+        <div class="eyebrow dk">What we do</div>
+        <h2 class="h2">BMW servicing and proper repairs, under one roof.</h2>
+        <p class="lead" style="color:#4a4f52">Describe the problem when you book and we'll point you in the right direction.</p>
+      </div>
+      <div class="g3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"></path></svg></div><h3>BMW servicing</h3><p>Minor and major services with oil, filters, fluids and a thorough multi-point check, so small issues are caught before they grow.</p></div>
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"></path></svg></div><h3>BMW diagnostics</h3><p>Warning light on the dash? We scan the car's systems and trace the fault properly instead of guessing with parts.</p></div>
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 4v2M12 18v2M4 12h2M18 12h2"></path></svg></div><h3>Brakes &amp; suspension</h3><p>Pads, discs, shocks and bushes inspected and replaced when needed, for a car that stops straight and rides the way it should.</p></div>
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a4 4 0 1 1-4 0z"></path></svg></div><h3>Engine &amp; cooling</h3><p>From leaks and overheating to rough running and strange noises: honest repairs that deal with the cause, not just the symptom.</p></div>
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path></svg></div><h3>Gearbox &amp; clutch</h3><p>Slipping clutch, rough shifts or vibration under load? We check the drivetrain end to end and advise on the right fix.</p></div>
+        <div class="card lt"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"></path></svg></div><h3>Electrical &amp; batteries</h3><p>Battery and charging-system checks, starting problems and electrical faults, sorted before load shedding nights catch you out.</p></div>
+      </div>
+      <p style="margin:0;font-size:15px;color:#4a4f52">Something not listed? Call or WhatsApp with your model and we'll let you know if we can help.</p>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="sec" style="padding:96px 64px">
+    <div class="g2" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;align-items:center">
+      <div class="img i-why" role="img" aria-label="Close view of the front of a BMW M4 with its headlights on" style="min-height:560px;border-radius:16px;border:1px solid #2a3238"></div>
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <div class="eyebrow">Why Flow State</div>
+        <h2 class="h2">A BMW workshop that keeps you in the loop.</h2>
+        <p class="lead">Car trouble is stressful enough. We keep things calm, clear and simple, from the first message to the moment you drive away.</p>
+        <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid #2a3238">
+          <div style="padding:18px 0;border-bottom:1px solid #2a3238"><h3 style="margin:0 0 4px;font-size:19px">BMW knowledge, not guesswork</h3><p style="margin:0;color:#a8aca9;line-height:1.6;font-size:15px">We know how these cars are built and where they tend to give trouble.</p></div>
+          <div style="padding:18px 0;border-bottom:1px solid #2a3238"><h3 style="margin:0 0 4px;font-size:19px">Diagnose first, then fix</h3><p style="margin:0;color:#a8aca9;line-height:1.6;font-size:15px">A careful look before the spanners come out means you pay for the repair your BMW actually needs.</p></div>
+          <div style="padding:18px 0;border-bottom:1px solid #2a3238"><h3 style="margin:0 0 4px;font-size:19px">Straight talk, no jargon</h3><p style="margin:0;color:#a8aca9;line-height:1.6;font-size:15px">We explain what we found and what we recommend in plain language, so you can decide with confidence.</p></div>
+          <div style="padding:18px 0;border-bottom:1px solid #2a3238"><h3 style="margin:0 0 4px;font-size:19px">Easy to reach</h3><p style="margin:0;color:#a8aca9;line-height:1.6;font-size:15px">Call or WhatsApp to book, ask a question or check on progress. No call centres, no runaround.</p></div>
+        </div>
+        <div><a class="btn" href="tel:+27731137335">Call 073 113 7335</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="sec" style="padding:96px 64px;background:#151a1d;border-top:1px solid #2a3238;border-bottom:1px solid #2a3238">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:12px"><div class="eyebrow">Built around BMW</div><h2 class="h2">Precision, up close.</h2></div>
+      <div class="g3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <div style="display:flex;flex-direction:column;gap:12px"><div class="img i-front" role="img" aria-label="Headlights of a BMW M4 at dusk" style="height:320px;border-radius:12px"></div><span style="font-size:15px;color:#a8aca9">Servicing &amp; checks</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div class="img i-lights" role="img" aria-label="City lights below a sunset horizon" style="height:320px;border-radius:12px"></div><span style="font-size:15px;color:#a8aca9">Computer diagnostics</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div class="img i-rear" role="img" aria-label="Side of a BMW M4 with a red glow on the road" style="height:320px;border-radius:12px"></div><span style="font-size:15px;color:#a8aca9">Brakes &amp; suspension</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="img i-sky" role="img" aria-label="Orange and purple sunset sky" style="position:relative">
+    <div class="sec" style="position:relative;padding:112px 64px;background:rgba(13,16,18,.72)">
+      <div style="max-width:760px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:24px;align-items:center">
+        <h2 class="h2" style="font-size:48px">Ready when you are.</h2>
+        <p class="lead" style="color:#e4e0d8">Call or WhatsApp to book your BMW in. We'll find a time that suits your day.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a class="btn" href="tel:+27731137335">Call 073 113 7335</a><a class="btn alt" href="https://wa.me/27731137335" style="border-color:#f3efe8">WhatsApp us</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service area -->
+  <section id="area" class="sec" style="padding:96px 64px">
+    <div class="g2" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div class="eyebrow">Service area</div>
+        <h2 class="h2">Based in Rivonia. Close to northern Joburg.</h2>
+        <p class="lead">Our workshop is in the heart of Rivonia, within easy reach of Sandton and Johannesburg's northern suburbs. Drop your BMW off on the way to work, or arrange a time that suits your day.</p>
+        <div><a class="btn alt" href="https://maps.google.com/?q=Flow%20State%20Automotive%2C%2017%2011th%20Ave%2C%20Rivonia%2C%20Johannesburg">Get directions on Google Maps</a></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;padding-top:8px">
+        <span class="chip">Rivonia</span><span class="chip">Sandton</span><span class="chip">Morningside</span><span class="chip">Bryanston</span><span class="chip">Sunninghill</span><span class="chip">Paulshof</span><span class="chip">Woodmead</span><span class="chip">Lonehill</span><span class="chip">Fourways</span><span class="chip">Randburg</span><span class="chip">Douglasdale</span><span class="chip">Greater Johannesburg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="sec" style="padding:96px 64px;background:#151a1d;border-top:1px solid #2a3238;border-bottom:1px solid #2a3238">
+    <div class="g2" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:64px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div class="eyebrow">Booking &amp; visiting</div>
+        <h2 class="h2">Questions, answered.</h2>
+        <p class="lead">Anything else on your mind? A quick WhatsApp is the easiest way to ask.</p>
+        <div><a class="btn alt" href="https://wa.me/27731137335">Ask on WhatsApp</a></div>
+      </div>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #2a3238">
+        <details open="" style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>Do you only work on BMWs?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">BMWs are our speciality. If you drive something else, send your make and model on WhatsApp and we'll tell you whether we can help.</p></details>
+        <details style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>How do I book my BMW in?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">Call 073 113 7335 or WhatsApp us with your model and what you need. Please get in touch before visiting so we can make sure someone's ready for you.</p></details>
+        <details style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>Where is the workshop?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">17 11th Ave, Rivonia, Johannesburg, within easy reach of Sandton and the northern suburbs.</p></details>
+        <details style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>What are your operating hours?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">Message us on WhatsApp or call and we'll confirm our current hours and the best time to bring your car in.</p></details>
+        <details style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>Can you tell me what's wrong before any work starts?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">Yes. We diagnose first, explain what we found in plain language, and confirm the plan with you before any work starts.</p></details>
+        <details style="border-bottom:1px solid #2a3238;padding:18px 0"><summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-weight:600;font-size:18px;cursor:pointer"><span>What should I bring when I drop off my car?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#ff7a45" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 10h12"></path><path class="v" d="M10 4v12"></path></svg></summary><p style="margin:10px 0 0;color:#a8aca9;line-height:1.65;font-size:16px">The keys, plus anything you know about the problem: when it started, any warning lights or noises. Your service history helps if you have it.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="sec" style="padding:96px 64px">
+    <div class="g2" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:stretch">
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <div class="eyebrow">Contact</div>
+        <h2 class="h2">Let's get your BMW booked in.</h2>
+        <p class="lead">Call or WhatsApp to arrange a time. Please get in touch before visiting so we can make sure someone's ready for you.</p>
+        <div class="card" style="gap:6px"><div class="eyebrow">Phone</div><a href="tel:+27731137335" class="disp" style="font-size:26px;font-weight:700;text-decoration:none">073 113 7335</a></div>
+        <div class="card" style="gap:6px"><div class="eyebrow">Workshop</div><span style="font-size:17px;line-height:1.6">Flow State Automotive<br>17 11th Ave, Rivonia<br>Johannesburg, Gauteng, 2000</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="tel:+27731137335">Call now</a><a class="btn alt" href="https://wa.me/27731137335">WhatsApp</a></div>
+      </div>
+      <div class="img i-lights" role="img" aria-label="City lights below a sunset horizon" style="position:relative;min-height:460px;border-radius:16px;border:1px solid #2a3238;overflow:hidden">
+        <div style="position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(0deg,rgba(13,16,18,.92) 0%,rgba(13,16,18,.25) 60%);display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:32px">
+          <div class="eyebrow">Find us</div>
+          <strong class="disp" style="font-size:26px">17 11th Ave, Rivonia</strong>
+          <div><a class="btn" href="https://maps.google.com/?q=Flow%20State%20Automotive%2C%2017%2011th%20Ave%2C%20Rivonia%2C%20Johannesburg">Open in Google Maps</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#090b0c;border-top:1px solid #2a3238;padding:56px 64px 40px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:420px">
+          <div style="display:flex;align-items:center;gap:12px"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#ff7a45" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 12c6-6 10 6 16 0s8-4 12-2"></path><path d="M4 19c6-6 10 6 16 0s8-4 12-2"></path><path d="M4 26c6-6 10 6 16 0s8-4 12-2"></path></svg><strong class="disp" style="font-size:18px;letter-spacing:.06em">FLOW STATE AUTOMOTIVE</strong></div>
+          <span style="font-size:14px;line-height:1.6;color:#a8aca9">BMW servicing, diagnostics and repairs at 17 11th Ave, Rivonia, Johannesburg.</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:24px;font-size:15px;align-items:flex-start">
+          <a href="tel:+27731137335" style="text-decoration:none">073 113 7335</a>
+          <a href="https://wa.me/27731137335" style="text-decoration:none">WhatsApp</a>
+          <a href="#contact" style="text-decoration:none">Find us</a>
+          <a href="#faq" style="text-decoration:none">How to book</a>
+        </div>
+      </div>
+      <div style="border-top:1px solid #2a3238;padding-top:20px;font-size:13px;line-height:1.7;color:#9a9e9b">© 2026 Flow State Automotive. Independent BMW specialist, not affiliated with BMW AG. BMW and M are trademarks of BMW AG. Photography is illustrative. Website concept by Just Your Design.</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
